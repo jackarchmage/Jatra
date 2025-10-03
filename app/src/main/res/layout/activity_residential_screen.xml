@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResidentialScreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="844dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_gravity="top|center_horizontal"
+            android:clipToPadding="false"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginBottom="-3dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Choose Drawing Type"
+                android:textColor="#FF000000"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="275dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/roundedframelayout">
+
+            <TextView
+                android:layout_width="211dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Elevation"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="52.41dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="46.8dp"
+                android:layout_marginBottom="-1.2dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="19dp"
+                android:text="Exterior face of your building – front, side, or rear."
+                android:textColor="#FFFFFFFF"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/designbtn_frame" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="69dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="373dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="69dp"
+                android:layout_height="27dp"
+                android:background="@drawable/roundedbutton_white"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Add"
+                    android:textColor="#FF282828"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="116dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/roundedframelayout">
+
+            <TextView
+                android:layout_width="211dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Floor Plan"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="52.41dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="46.8dp"
+                android:layout_marginBottom="-1.2dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="19dp"
+                android:text="Layout of rooms, walls, circulation. Required for each level."
+                android:textColor="#FFFFFFFF"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/designbtn_frame" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="69dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="281dp"
+            android:layout_marginTop="213dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="69dp"
+                android:layout_height="27dp"
+                android:background="@drawable/roundedbutton_white"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Add"
+                    android:textColor="#FF282828"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="435dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/roundedframelayout">
+
+            <TextView
+                android:layout_width="211dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Section"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="52.41dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="46.8dp"
+                android:layout_marginBottom="-1.2dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="19dp"
+                android:text="A vertical cut-through of your space to show internal layouts."
+                android:textColor="#FFFFFFFF"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/designbtn_frame" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="594dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/roundedframelayout">
+
+            <TextView
+                android:layout_width="211dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Full Package"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="52.41dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="46.8dp"
+                android:layout_marginBottom="-1.2dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="19dp"
+                android:text="Includes 1 of each + FREE 3D model &amp; AR walkthrough."
+                android:textColor="#FFFFFFFF"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/designbtn_frame" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="92dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="left|top"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <!-- 331:4279:space-view0 Frame 427321705_space_view0 space-view -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="222dp"
+                android:layout_height="64dp"
+                android:background="@drawable/roundedbutton"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Confirm Items"
+                    android:textColor="#FFB8B8B8"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="69dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="531dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="69dp"
+                android:layout_height="27dp"
+                android:background="@drawable/roundedbutton_white"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Add"
+                    android:textColor="#FF282828"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="69dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="692dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="69dp"
+                android:layout_height="27dp"
+                android:background="@drawable/roundedbutton_white"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Add"
+                    android:textColor="#FF282828"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

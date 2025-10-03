@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DesignFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="top|center_horizontal"
+                android:clipToPadding="false"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:visibility="invisible"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/baseline_arrow_back_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginBottom="-3dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:fontFamily="@font/interweight"
+                    android:text=" Design Workspace"
+                    android:textColor="#FF000000"
+                    android:textSize="24dp" />
+            </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/roundedframelayout">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="147dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/gradientbg"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="top|center_horizontal"
+                android:gravity="left|bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="left|top"
+                    android:orientation="vertical"
+                    android:paddingTop="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/interweight"
+                        android:text="View your design in AR"
+                        android:textColor="#FFF8F8F8"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="left|top"
+                        android:includeFontPadding="false"
+                        android:lineHeight="16dp"
+                        android:fontFamily="@font/interweight"
+                        android:text="See it before you build it"
+                        android:textColor="#FFF8F8F8"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="left|top"
+                        android:background="@drawable/roundedbutton_white"
+                        android:clipToPadding="false"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/viewdesignbtn"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"
+                            android:gravity="center_horizontal"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:fontFamily="@font/interweight"
+                            android:text="Explore"
+                            android:textColor="#FF282828"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="82dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="20dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/design_icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/roundedframelayout">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="147dp"
+                android:layout_marginTop="37dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/gradientbg"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="top|center_horizontal"
+                android:gravity="left|bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="left|top"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:fontFamily="@font/interweight"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:text="Design Visualization"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="left|top"
+                        android:includeFontPadding="false"
+                        android:lineHeight="16dp"
+                        android:fontFamily="@font/interweight"
+                        android:text="Visualize your design\nGet 3D views or walkthrough\n videosat the best price"
+                        android:textColor="#FFF8F8F8"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="horizontal"
+                        android:background="@drawable/roundedbutton_white"
+                        android:clipToPadding="false"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/designvisualizationbtn"
+                        android:paddingTop="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:fontFamily="@font/interweight"
+                                android:singleLine="true"
+                                android:text="Explore"
+                                android:textColor="#FF282828"
+                                android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center|end"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/design_icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/roundedframelayout">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="147dp"
+                android:layout_marginTop="37dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/gradientbg"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="top|center_horizontal"
+                android:gravity="left|bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="left|top"
+                    android:orientation="vertical"
+                    android:paddingTop="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/interweight"
+                        android:text="Build a new design"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="left|top"
+                        android:includeFontPadding="false"
+                        android:lineHeight="16dp"
+                        android:fontFamily="@font/interweight"
+                        android:text="Design more, spend less"
+                        android:textColor="#FFF8F8F8"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="horizontal"
+                        android:background="@drawable/roundedbutton_white"
+                        android:clipToPadding="false"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/buildnewdesignbtn"
+                        android:paddingTop="5dp"
+                        >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:fontFamily="@font/interweight"
+                                android:singleLine="true"
+                                android:text="Start Building"
+                                android:textColor="#FF282828"
+                                android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/design_icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

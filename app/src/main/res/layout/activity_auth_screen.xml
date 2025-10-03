@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthenticationFragment">
+    <FrameLayout
+        android:id="@+id/container_iphone_pro_max"
+        android:layout_width="match_parent"
+        android:layout_height="844dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/image_frame"
+            android:layout_width="11.87dp"
+            android:layout_height="12.13dp"
+            android:layout_marginLeft="338dp"
+            android:layout_marginRight="40.13dp"
+            android:layout_marginTop="248.3dp"
+            android:layout_marginBottom="583.57dp"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/container_frame1"
+            android:layout_width="370dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_gravity="top|left"
+            android:clipToPadding="false"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/image_frame_arrow_left"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/text_sign_up_login"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginBottom="-3dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Sign Up/Login"
+                android:textColor="#FF000000"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/container_frame2"
+            android:layout_width="390dp"
+            android:layout_height="646dp"
+            android:layout_marginTop="102dp"
+            android:layout_gravity="top|center_horizontal">
+
+            <FrameLayout
+                android:id="@+id/container_group1"
+                android:layout_width="390dp"
+                android:layout_height="646dp"
+                android:layout_gravity="top|left">
+
+                <ImageView
+                    android:id="@+id/image_group_rectangle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loginbg" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/container_frame3"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="453dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="false"
+                android:text="Sign up now and start \n building your future."
+                android:textColor="#FFFFFFFF"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:id="@+id/container_frame4"
+                android:layout_width="352dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="540dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedframelayout"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20.5dp"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:paddingTop="20.5dp">
+
+                    <TextView
+                        android:id="@+id/text_button_log_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="LOG IN"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <!-- 331:5059:space-view0 Frame 427321724_space_view0 space-view -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/btn_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbutton_white"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20.5dp"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:paddingTop="20.5dp">
+
+                    <TextView
+                        android:id="@+id/text_button_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="SIGN UP"
+                        android:textColor="#FF282828"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

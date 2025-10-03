@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="844dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/detailsbg"
+            android:gravity="left|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="51dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="169dp"
+                android:layout_marginRight="170dp"
+                android:layout_marginTop="114.72dp"
+                android:layout_marginBottom="14dp"
+                android:gravity="left|top"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="6dp"
+                    android:scaleType="centerInside"
+                   />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="11.9dp"
+                android:layout_height="8.93dp"
+                android:layout_marginLeft="337.87dp"
+                android:layout_marginRight="40.23dp"
+                android:layout_marginTop="129.36dp"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="327dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="414dp"
+            android:layout_gravity="top|left">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_gravity="top|left"
+                android:clipToPadding="false"
+                android:gravity="left|top"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Property Details"
+                    android:textColor="#FF000000"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitCenter"
+                        android:tint="#FFA3A2A9"
+                        android:src="@drawable/outline_king_bed_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="4 Bedrooms"
+                        android:textColor="#FFA3A2A9"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="fitCenter"
+                        android:tint="#FFA3A2A9"
+                        android:src="@drawable/outline_bathtub_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="3 Bathrooms"
+                        android:textColor="#FFA3A2A9"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="#FFA3A2A9"
+                        android:background="@drawable/outline_aspect_ratio_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="2,135 sqft"
+                        android:textColor="#FFA3A2A9"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="-5dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Overview"
+                    android:textColor="#FF000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="194.75dp"
+                    android:layout_marginTop="18.63dp"
+                    android:layout_marginBottom="-1.38dp"
+                    android:gravity="left|top"
+                    android:includeFontPadding="false"
+                    android:lineHeight="20dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
+                    android:textColor="#FF000000"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="389dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="274dp"
+            android:layout_gravity="top|center_horizontal">
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="29dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2.06dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|top"
+                    android:orientation="vertical"
+                    android:paddingTop="2.06dp">
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="54.13dp"
+                        android:layout_marginTop="-2.06dp"
+                        android:layout_marginBottom="-2.06dp"
+                        android:gravity="left|top"
+                        android:includeFontPadding="false"
+                        android:lineHeight="28dp"
+                        android:text="Maple Grove Residency"
+                        android:textColor="#FF282828"
+                        android:textSize="24dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:clipToPadding="false"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/outline_location_on_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Arunachal Pradesh"
+                            android:textColor="#FF282828"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 20:10082:space-view0 Frame 162472_space_view0 space-view -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="111dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/roundedbutton"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/white"
+                        android:src="@drawable/outline_arrows_output_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="9dp"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:lineHeight="36.72dp"
+                        android:text="View in ar"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

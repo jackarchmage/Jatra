@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Jatra.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Make the system splash background use our color -->
+        <item name="android:windowSplashScreenBackground">@color/black</item>
+        <!-- Use your logo here (vector or bitmap). This overrides ic_launcher. -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/icon2</item>
+        <!-- If you don't want the default icon animation, disable it -->
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+        <!-- Optional: keep status bar color consistent -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+</resources>

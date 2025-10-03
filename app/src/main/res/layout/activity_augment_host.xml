@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AugmentHostActivity">
+
+    <!-- SceneView -->
+    <io.github.sceneview.ar.ARSceneView
+        android:id="@+id/sceneView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Controls -->
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent">
+
+        <Button
+            android:id="@+id/btnStartAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start AR" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btnPreload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preload (download)" />
+
+    </LinearLayout>
+
+    <!-- Hint text -->
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Provide targetImageUrl and modelUrl as Intent extras, or call setters."
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="#66000000"
+        android:textColor="@android:color/white" />
+
+    <!-- Preload overlay -->
+    <FrameLayout
+        android:id="@+id/preloadOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/tvProgressTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Downloading..."
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="@android:color/black" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tvProgressPercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvProgressMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starting..."
+                android:paddingTop="8dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

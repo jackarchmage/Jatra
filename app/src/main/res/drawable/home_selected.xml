@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Black circle background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/black"/>
+            <size android:width="48dp" android:height="48dp"/> <!-- adjust to match icon size -->
+        </shape>
+    </item>
+
+    <!-- Your original icon -->
+    <item
+        android:drawable="@drawable/outline_home_24_white" />   <!-- replace with your actual icon -->
+</layer-list>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jks.jatrav3.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/designFragment"
+        android:name="com.jks.jatrav3.DesignFragment"
+        android:label="fragment_design"
+        tools:layout="@layout/fragment_design" />
+    <fragment
+        android:id="@+id/materialsFragment"
+        android:name="com.jks.jatrav3.MaterialsFragment"
+        android:label="fragment_materials"
+        tools:layout="@layout/fragment_materials" />
+    <fragment
+        android:id="@+id/workersFragment"
+        android:name="com.jks.jatrav3.WorkersFragment"
+        android:label="fragment_workers"
+        tools:layout="@layout/fragment_workers" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.jks.jatrav3.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

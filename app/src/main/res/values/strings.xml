@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JatraV3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signup_bullet">• Minimum 8 characters\n• One uppercase letter\n• One lowercase letter\n• At least one number and one special character</string>
+    <string name="design_source_hire_amp_get_loan_all_in_one_place">Design, source, hire &amp; get loan—<i>all in one place</i></string>
+</resources>

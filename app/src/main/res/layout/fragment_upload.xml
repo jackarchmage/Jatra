@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UploadFragment">
+
+
+    <LinearLayout
+            android:id="@+id/container_frame1"
+            android:layout_width="370dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_gravity="top|left"
+            android:clipToPadding="false"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/image_frame_arrow_left"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/text_upload_a_model"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginBottom="-3dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:fontFamily="@font/interweight"
+                android:singleLine="true"
+                android:text="Upload A Model"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dashed_container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="28dp"
+        android:clipToPadding="false"
+        android:padding="28dp"
+        android:background="@drawable/dashed_rounded"
+        >
+
+        <LinearLayout
+            android:id="@+id/center_column"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cloud_icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/uploadicon"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to Select Files"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/interweight"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supported Formats: SKP, GLB, FBX"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/interweight"
+                android:alpha="0.7" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/upload_progress_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="visible"
+        app:indicatorSize="6dp"
+        app:trackColor="@android:color/darker_gray"
+        app:indicatorColor="?attr/colorPrimary"
+        app:showAnimationBehavior="none" />
+
+    <Button
+        android:id="@+id/upload_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Cancel"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="visible"
+        android:backgroundTint="@color/jatracolor"
+        android:textColor="@android:color/white"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"/>
+
+    <LinearLayout
+            android:id="@+id/container_cta"
+            android:layout_width="345dp"
+            android:layout_height="57dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/onboardingbtn"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="9dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="9dp">
+
+            <TextView
+                android:id="@+id/text_next_step"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="UPLOAD"
+                android:textColor="#FFFFFFFF"
+                android:fontFamily="@font/interweight"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

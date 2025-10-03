@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/container_i_phone_pro_max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_top_section"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/hometop" />
+
+        <TextView
+            android:id="@+id/text_hello_there"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="11dp"
+            android:layout_gravity="left"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Hello Guest,"
+            android:textColor="#FF282828"
+            android:fontFamily="@font/interweight"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/text_design_source_hire_loan"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="left"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/design_source_hire_amp_get_loan_all_in_one_place"
+            android:textColor="#FF263238"
+            android:fontFamily="@font/interitalic"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/design_btn"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/roundedframelayout">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/gradientbg"
+                android:scaleType="centerInside"
+                />
+
+            <TextView
+                android:id="@+id/text_design_workspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:fontFamily="@font/interweight"
+                android:text="Design Workspace"
+                android:textColor="#FFF8F8F8"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_lorem_ipsum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="16dp"
+                android:fontFamily="@font/interweight"
+                android:text="Design Beyond Imagination \nVisualize with Augmented Reality"
+                android:textColor="#FFF8F8F8"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/image_union"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/design_icon" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/material_btn"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundedframelayout">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/gradientbg"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:id="@+id/text_source_materials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="Source Materials"
+                android:fontFamily="@font/interweight"
+                android:textColor="#FFF8F8F8"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_lorem_ipsum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="16dp"
+                android:text="Buy &amp; Know\nYour One-Stop Hub for \nConstruction Materials"
+                android:textColor="#FFF8F8F8"
+                android:fontFamily="@font/interweight"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/image_union1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="center_vertical|right"
+                android:scaleType="centerInside"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/material_icon" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/workers_btn"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundedframelayout">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/gradientbg"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:id="@+id/text_hire_workers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:fontFamily="@font/interweight"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="Hire Workers"
+                android:textColor="#FFF8F8F8"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_lorem_ipsum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="16dp"
+                android:fontFamily="@font/interweight"
+                android:text="Smart Search for Skilled Labour\nConnect in just one click"
+                android:textColor="#FFF8F8F8"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/image_union2"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:scaleType="centerInside"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/worker_icon" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/getloan_btn"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedframelayout">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/gradientbg"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:id="@+id/text_get_loan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:fontFamily="@font/interweight"
+                android:text="Approved Loan Drawings"
+                android:textColor="#FFF8F8F8"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_lorem_ipsum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="16dp"
+                android:fontFamily="@font/interweight"
+                android:text="Lowest-cost Loan Drawings, \napproved &amp; delivered to you"
+                android:textColor="#FFF8F8F8"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/image_union3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:scaleType="centerInside"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/getloan" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project_bottom_sheet">
+
+    <FrameLayout
+        android:id="@+id/container_frame"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_subtract"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="21dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/outline_close_24" />
+
+        <TextView
+            android:id="@+id/text_select_project_type"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="26.5dp"
+            android:layout_marginBottom="-6.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Select Project Type"
+            android:textColor="#FF282828"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/residential_img"
+            android:layout_width="352dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="127dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/roundedframelayout"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/img_rectangle1"
+            android:layout_width="352dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="254dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/roundedframelayout"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/img_rectangle2"
+            android:layout_width="352dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="381dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/roundedframelayout"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/img_rectangle3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="135dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/loanroundedbg" />
+
+        <ImageView
+            android:id="@+id/img_rectangle4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="262dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/loanroundedbg" />
+
+        <ImageView
+            android:id="@+id/img_rectangle5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="389dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/loanroundedbg" />
+
+        <TextView
+            android:id="@+id/text_planning_guide"
+            android:layout_width="266dp"
+            android:layout_height="31.41dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="66.8dp"
+            android:layout_marginBottom="-1.2dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="19dp"
+            android:text="Tell us what you&#39;re planning to build so we can guide you better!"
+            android:textColor="#FF282828"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text_residential"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginRight="138dp"
+            android:layout_marginTop="149.39dp"
+            android:layout_marginBottom="336.61dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Residential"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_interior"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="271.39dp"
+            android:layout_marginBottom="214.61dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Interior"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_commercial"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginRight="116dp"
+            android:layout_marginTop="398.39dp"
+            android:layout_marginBottom="87.61dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Commercial"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_business_spaces"
+            android:layout_width="196dp"
+            android:layout_height="65.41dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginTop="437.69dp"
+            android:layout_marginBottom="5.91dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="19dp"
+            android:text="Offices, shops, cafes, or any business-use spaces."
+            android:textColor="#FFFFFFFF"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text_interior_design"
+            android:layout_width="201dp"
+            android:layout_height="68.41dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="310.69dp"
+            android:layout_marginBottom="129.91dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="19dp"
+            android:text="Interior design for existing homes or commercial spaces."
+            android:textColor="#FFFFFFFF"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text_private_spaces"
+            android:layout_width="201dp"
+            android:layout_height="68.41dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="188.69dp"
+            android:layout_marginBottom="251.91dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="19dp"
+            android:text="Homes, villas, apartments, and private living spaces."
+            android:textColor="#FFFFFFFF"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+
+
+</FrameLayout>

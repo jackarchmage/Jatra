@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid background -->
+    <item android:drawable="@color/black" />
+
+    <!-- Centered app logo -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/jatralockup1" />
+    </item>
+</layer-list>

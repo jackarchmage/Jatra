@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrdersFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="844dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_gravity="top|center_horizontal"
+            android:clipToPadding="false"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:id="@+id/btn_back"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginBottom="-3dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="My Orders"
+                android:textColor="#FF151515"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="266dp"
+            android:layout_height="31.41dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="104.8dp"
+            android:layout_marginBottom="-1.2dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="19dp"
+            android:text="Browse and pick a worker based on rating, location, and services."
+            android:textColor="#FF151515"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="47dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside" />
+
+        <FrameLayout
+            android:layout_width="349dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginTop="173dp"
+            android:layout_gravity="top|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_gravity="top|left"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Order History"
+                android:textColor="#FF000000"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="349dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="19dp"
+                android:layout_gravity="top|left"
+                android:background="@color/loanbg_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginLeft="204dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_gravity="top|left"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Upcoming Orders"
+                android:textColor="#FF000000"
+                android:textSize="14dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19.5dp"
+            android:layout_marginTop="210dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/loanroundedbg" />
+
+                <LinearLayout
+                    android:layout_width="238.38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-4.5dp"
+                                android:layout_marginBottom="-4.5dp"
+                                android:clipToPadding="false"
+                                android:gravity="left|top"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4.5dp"
+                                android:paddingTop="4.5dp">
+
+                                <TextView
+                                    android:layout_width="170.63dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginTop="-4.5dp"
+                                    android:layout_marginBottom="-4.5dp"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="OPC 3-Grade Cement"
+                                    android:textColor="#FF282828"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:layout_marginTop="11dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Delivered on 22nd April"
+                                android:textColor="#FF282828"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="44dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/outline_arrow_forward_ios_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="118dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/roundedbutton"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2.5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Write a Review"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/loanbg_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/loanroundedbg" />
+
+                <LinearLayout
+                    android:layout_width="238.38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-4.5dp"
+                                android:layout_marginBottom="-4.5dp"
+                                android:clipToPadding="false"
+                                android:gravity="left|top"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4.5dp"
+                                android:paddingTop="4.5dp">
+
+                                <TextView
+                                    android:layout_width="170.63dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginTop="-4.5dp"
+                                    android:layout_marginBottom="-4.5dp"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="Stick On PVC Wallpaper"
+                                    android:textColor="#FF282828"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:layout_marginTop="11dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Delivered on 22nd April"
+                                android:textColor="#FF282828"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="44dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/outline_arrow_forward_ios_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="118dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/roundedbutton"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2.5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Write a Review"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/loanbg_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/loanroundedbg" />
+
+                <LinearLayout
+                    android:layout_width="238.38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-4.5dp"
+                                android:layout_marginBottom="-4.5dp"
+                                android:clipToPadding="false"
+                                android:gravity="left|top"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4.5dp"
+                                android:paddingTop="4.5dp">
+
+                                <TextView
+                                    android:layout_width="170.63dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginTop="-4.5dp"
+                                    android:layout_marginBottom="-4.5dp"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="4x4 Ft Glass Mirror"
+                                    android:textColor="#FF282828"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:layout_marginTop="11dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Delivered on 22nd April"
+                                android:textColor="#FF282828"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="44dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/outline_arrow_forward_ios_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="118dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/roundedbutton"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2.5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Write a Review"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/loanbg_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/loanroundedbg" />
+
+                <LinearLayout
+                    android:layout_width="238.38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-4.5dp"
+                                android:layout_marginBottom="-4.5dp"
+                                android:clipToPadding="false"
+                                android:gravity="left|top"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4.5dp"
+                                android:paddingTop="4.5dp">
+
+                                <TextView
+                                    android:layout_width="170.63dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginTop="-4.5dp"
+                                    android:layout_marginBottom="-4.5dp"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="Jaquar Bath Shower"
+                                    android:textColor="#FF282828"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:layout_marginTop="11dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Delivered on 22nd April"
+                                android:textColor="#FF282828"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="44dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/outline_arrow_forward_ios_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="118dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/roundedbutton"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2.5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Write a Review"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/loanbg_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/loanroundedbg" />
+
+                <LinearLayout
+                    android:layout_width="238.38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-4.5dp"
+                                android:layout_marginBottom="-4.5dp"
+                                android:clipToPadding="false"
+                                android:gravity="left|top"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4.5dp"
+                                android:paddingTop="4.5dp">
+
+                                <TextView
+                                    android:layout_width="170.63dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginTop="-4.5dp"
+                                    android:layout_marginBottom="-4.5dp"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="OPC 3-Grade Cement"
+                                    android:textColor="#FF282828"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:layout_marginTop="11dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Delivered on 22nd April"
+                                android:textColor="#FF282828"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="44dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/outline_arrow_forward_ios_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="118dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/roundedbutton"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2.5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Write a Review"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

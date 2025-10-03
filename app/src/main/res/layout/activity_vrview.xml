@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VRView">
+
+        <io.github.sceneview.ar.ARSceneView
+            android:id="@+id/arSceneView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- simple top bar with close button -->
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            >
+
+                <ImageButton
+                    android:id="@+id/btnClose"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
+        </LinearLayout>
+
+        <!-- Simple centered loading indicator -->
+        <FrameLayout
+            android:id="@+id/loadingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/loadingView"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="visible"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/btn_place"
+            />
+        <!-- somewhere over the SceneView, e.g. in a bottom control bar -->
+        <LinearLayout
+            android:id="@+id/bottomControls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="bottom|center_horizontal">
+
+                <TextView
+                    android:id="@+id/zoomLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zoom"
+                    android:layout_marginEnd="8dp"/>
+
+                <SeekBar
+                    android:id="@+id/seekZoom"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/zoomValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 %"
+                    android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+
+
+</FrameLayout>

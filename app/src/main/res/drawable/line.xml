@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="line">
+    <stroke
+        android:width="2dp"
+        android:color="@color/black" /> <!-- Set your desired background color -->
+    <!-- Adjust the radius for desired curvature -->
+    <!-- Optional: Add stroke for a border -->
+    <!-- <stroke android:width="2dp" android:color="#CCCCCC" /> -->
+</shape>

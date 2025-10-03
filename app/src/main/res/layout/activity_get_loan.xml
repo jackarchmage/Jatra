@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".GetLoan">
+
+    <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="35dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="centerInside"
+                        android:id="@+id/btn_back"
+                        android:src="@drawable/baseline_arrow_back_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginBottom="-3dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Get Loan (1/2)"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF282828"
+                        android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/loanroundedbg"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Loan Details"
+                    android:textStyle="bold"
+                    android:textColor="#FF000000"
+                    android:fontFamily="@font/interweight"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="145dp"
+                        android:layout_height="25dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/interweight"
+                        android:text="Your Property is in"
+                        android:textColor="#FF000000"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_horizontal"
+                        android:orientation="vertical"
+                        android:id="@+id/dropdown1"
+                        android:spinnerMode="dropdown"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:fontFamily="@font/interweight"
+                        android:backgroundTint="@color/buttonframe_color"
+                        android:background = "@drawable/roundedbutton_white"
+                        android:textColor="@color/black"
+                        android:paddingTop="7dp">
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="145dp"
+                        android:layout_height="25dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Loan Amount"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF000000"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedbutton_white"
+                        android:gravity="right|center_vertical"
+                        android:drawableStart="@drawable/outline_currency_rupee_24"
+                        android:orientation="vertical"
+                        android:id="@+id/editloan1"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:paddingTop="7dp">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/loanroundedbg"
+                android:gravity="left|top"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="House Details"
+                    android:textColor="#FF000000"
+                    android:fontFamily="@font/interweight"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="145dp"
+                        android:layout_height="25dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/interweight"
+                        android:text="Size of the Property"
+                        android:textColor="#FF000000"
+                        android:textSize="14sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedbutton_white"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="7dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="12sp"
+                        android:textColorHint="@color/black"
+                        android:hint="Length"
+                        android:id="@+id/editlength"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/black"
+                        android:paddingTop="7dp">
+                    </EditText>
+                    <EditText
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedbutton_white"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="7dp"
+                        android:textSize="12sp"
+                        android:textColorHint="@color/black"
+                        android:hint="Breadth"
+                        android:id="@+id/editbreadth"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/black"
+                        android:paddingTop="7dp">
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="-2dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp">
+
+                    <TextView
+                        android:layout_width="219dp"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/interweight"
+                        android:text="Is there an approach road?"
+                        android:textColor="#FF000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="67dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:buttonTint="@color/black"
+                        android:singleLine="true"
+                        android:text="Yes"
+                        android:id="@+id/roadcheck1"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:layout_width="67dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="No"
+                        android:buttonTint="@color/black"
+                        android:id="@+id/roadcheck2"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="-2dp"
+                    android:clipToPadding="false"
+                    android:id="@+id/ll_direction"
+                    android:visibility="gone"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp">
+
+                    <TextView
+                        android:layout_width="184dp"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Direction"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clipToPadding="false"
+                    android:id="@+id/ll_ns"
+                    android:visibility="gone"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:buttonTint="@color/black"
+                        android:singleLine="true"
+                        android:text="North"
+                        android:fontFamily="@font/interweight"
+                        android:id="@+id/dirNorth"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="South"
+                        android:buttonTint="@color/black"
+                        android:id="@+id/dirSouth"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clipToPadding="false"
+                    android:id="@+id/ll_ew"
+                    android:visibility="gone"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:buttonTint="@color/black"
+                        android:singleLine="true"
+                        android:text="East"
+                        android:id="@+id/dirEast"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="West"
+                        android:buttonTint="@color/black"
+                        android:id="@+id/dirWest"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="-2dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp">
+
+                    <TextView
+                        android:layout_width="184dp"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="House Facing Direction"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:id="@+id/northchk"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:buttonTint="@color/black"
+                        android:singleLine="true"
+                        android:text="North"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:buttonTint="@color/black"
+                        android:id="@+id/southchk"
+                        android:singleLine="true"
+                        android:text="South"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:id="@+id/westchk"
+                        android:text="West"
+                        android:fontFamily="@font/interweight"
+                        android:buttonTint="@color/black"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+
+
+                    <CheckBox
+                        android:layout_width="67dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:buttonTint="@color/black"
+                        android:singleLine="true"
+                        android:text="East"
+                        android:fontFamily="@font/interweight"
+                        android:id="@+id/eastchk"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/otherchk"
+                        android:layout_width="0dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/black"
+                        android:fontFamily="@font/interweight"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:text="Additional Description"
+                        android:textColor="#FF1E1E1E"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:clipToPadding="false"
+                    android:gravity="left|top"
+                    android:hint="North East, South West"
+                    android:orientation="horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="11dp"
+                    android:id="@+id/ed_additional"
+                    android:textColorHint="@color/black"
+                    android:paddingRight="11dp"
+                    android:fontFamily="@font/interweight"
+                    android:textColor="@color/black"
+                    android:paddingTop="7dp">
+                </EditText>
+
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:clipToPadding="false"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:id="@+id/btnNext"
+                        android:text="NEXT"
+                        android:textSize="16sp"
+                        android:textColor="#FFB8B8B8"
+                        android:background="@drawable/onboardingbtn"
+                        />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</ScrollView>

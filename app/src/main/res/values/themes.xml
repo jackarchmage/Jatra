@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.JatraV3" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="materialCardViewStyle">@style/Widget.MaterialComponents.CardView</item>
+
+    </style>
+    <style name="Theme.Jatra.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- This is used on older Android versions as windowBackground -->
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+
+</resources>

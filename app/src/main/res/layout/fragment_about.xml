@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="50dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    tools:context=".AboutFragment">
+
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jatralogo"
+        app:tint="@color/black"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/txtAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Jatra"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interweight"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/dashed_rounded"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtAboutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="@font/designer"
+            android:textColor="@android:color/black"
+            android:padding="4dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0.0"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/interweight"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

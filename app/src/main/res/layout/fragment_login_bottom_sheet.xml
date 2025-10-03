@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginBottomSheet">
+    <FrameLayout
+        android:id="@+id/container_frame"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:background="@drawable/loanroundedbg">
+
+        <ImageView
+            android:id="@+id/img_subtract"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="21dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/outline_close_24" />
+
+        <TextView
+            android:id="@+id/text_select_project_type"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="26.5dp"
+            android:layout_marginBottom="-6.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="3"
+            android:textStyle="bold"
+            android:text="To create an account, you need to verify your mobile number"
+            android:textColor="#FF282828"
+            android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/text_planning_guide"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="-1.2dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="19dp"
+            android:text="Please enter your one time 6 digit code received on your mobile number"
+            android:textColor="#FF282828"
+            android:textSize="14dp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:id="@+id/edt_loginnumber"
+            android:textColor="@color/black"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="-1.2dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left|top"
+            android:background="@drawable/bottom_nav_boundary"
+            />
+        <TextView
+            android:id="@+id/resendcode"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-200dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginBottom="-1.2dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="19dp"
+            android:text="Resend Code"
+            android:textColor="#FF282828"
+            android:textSize="14dp" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/btn_confirmlogin"
+            android:textColor="@color/white"
+            android:background="@drawable/onboardingbtn"
+            android:layout_marginTop="220dp"
+            android:layout_marginBottom="-1.2dp"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            />
+
+    </FrameLayout>
+</FrameLayout>

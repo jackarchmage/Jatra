@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".AugmentHostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ARListActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" /> <!-- Your activities -->
+        <activity
+            android:name=".ARTable"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VRView"
+            android:exported="true" />
+        <activity
+            android:name=".OnboardingViewPager"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".AuthScreen"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityGetLoan2"
+            android:exported="false" />
+        <activity
+            android:name=".ResidentialScreen"
+            android:exported="false" />
+        <activity
+            android:name=".GetLoan"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".Homescreen"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding4"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding3"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding2"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding1"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JatraV3" /> <!-- === Razorpay manifest overrides to satisfy Android 12+ requirement === -->
+        <!--
+ Force explicit exported value for CheckoutActivity (library may not set it).
+             Razorpay examples typically use exported="true" for this activity.
+        -->
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <!--
+ Force explicit exported value for token receiver.
+             Set exported="false" (receiver doesn't need to be exported to other apps).
+        -->
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false"
+            tools:replace="android:exported">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

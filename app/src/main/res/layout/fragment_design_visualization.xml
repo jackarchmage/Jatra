@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DesignFragment">
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/baseline_arrow_back_24"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnBack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Design Visualization"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/detailsbg"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/videoVisual" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/tv_visual1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/detailsbg"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/iv_visual" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fab_transformation_scrim_behavior"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/tv_visual2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/onboardingbtn"
+            android:text="GET QUOTATION"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/btn_quotation" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loader_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="#80000000">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</FrameLayout>

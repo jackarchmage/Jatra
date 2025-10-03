@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="844dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginTop="131dp"
+            android:id="@+id/btn_profile_photo"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/profileroundbg"
+            android:scaleType="centerInside" />
+
+        <FrameLayout
+            android:layout_width="342dp"
+            android:layout_height="481dp"
+            android:layout_marginLeft="23.06dp"
+            android:layout_marginTop="237dp"
+            android:layout_gravity="top|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginLeft="3.33dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:id="@+id/tt_name"
+                android:singleLine="true"
+                android:text="Emily Sezehn"
+                android:textColor="#FF282828"
+                android:fontFamily="@font/interweight"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="2.9dp"
+                android:layout_marginTop="29.07dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal|top"
+                android:includeFontPadding="false"
+                android:lineHeight="14.52dp"
+                android:id="@+id/tt_email"
+                android:text="user@example.com"
+                android:textColor="#FF282828"
+                android:fontFamily="@font/interweight"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28.43dp"
+                android:layout_marginTop="355.14dp"
+                android:layout_gravity="top|left"
+                android:clipToPadding="false"
+                android:id="@+id/btn_about"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26.43dp"
+                    android:layout_height="26.43dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/outline_motion_photos_on_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="12.33dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="About App"
+                    android:fontFamily="@font/interweight"
+                    android:textColor="#FF282828"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="21.14dp"
+                    android:layout_height="21.14dp"
+                    android:layout_marginLeft="199.96dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/outline_arrow_forward_ios_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="-0.06dp"
+                android:layout_marginTop="405dp"
+                android:layout_gravity="top|left"
+                android:id="@+id/btn_logout"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26.43dp"
+                        android:layout_height="26.43dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_motion_photos_on_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12.33dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Log Out"
+                        android:textColor="#FF282828"
+                        android:fontFamily="@font/interweight"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="21.14dp"
+                    android:layout_height="21.14dp"
+                    android:layout_marginStart="220dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/outline_arrow_forward_ios_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="336.06dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="0.66dp"
+                android:layout_marginTop="334dp"
+                android:layout_gravity="top|right"
+                android:background="@color/loanbg_color" />
+
+            <View
+                android:layout_width="336.06dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="77.52dp"
+                android:layout_gravity="top|right"
+                android:background="@color/loanbg_color"
+              />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="92dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:id="@+id/btn_profile"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26.43dp"
+                        android:layout_height="26.43dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_manage_accounts_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12.33dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:fontFamily="@font/interweight"
+                        android:singleLine="true"
+                        android:text="My Profile"
+                        android:textColor="#FF282828"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="21.14dp"
+                        android:layout_height="21.14dp"
+                        android:layout_marginLeft="199.96dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_arrow_forward_ios_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.14dp"
+                    android:clipToPadding="false"
+                    android:id="@+id/btnOrders"
+                    android:visibility="gone"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26.43dp"
+                        android:layout_height="26.43dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_settings_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12.33dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="My Orders"
+                        android:fontFamily="@font/interweight"
+                        android:textColor="#FF282828"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="21.14dp"
+                        android:layout_height="21.14dp"
+                        android:layout_marginLeft="192.91dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_arrow_forward_ios_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.14dp"
+                    android:id="@+id/btnNotification"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="26.43dp"
+                            android:layout_height="26.43dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/outline_notification_settings_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginLeft="12.33dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:fontFamily="@font/interweight"
+                            android:singleLine="true"
+                            android:text="Notifications"
+                            android:textColor="#FF282828"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="21.14dp"
+                        android:layout_height="21.14dp"
+                        android:layout_marginLeft="179.7dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_arrow_forward_ios_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.14dp"
+                    android:id="@+id/btn_security"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="26.43dp"
+                            android:layout_height="26.43dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/outline_shield_lock_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginLeft="12.33dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:fontFamily="@font/interweight"
+                            android:text="Security &amp; Privacy"
+                            android:textColor="#FF282828"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="21.14dp"
+                        android:layout_height="21.14dp"
+                        android:layout_marginLeft="138.3dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_arrow_forward_ios_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.14dp"
+                    android:clipToPadding="false"
+                    android:visibility="gone"
+                    android:id="@+id/btn_helpsupport"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26.43dp"
+                        android:layout_height="26.43dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_mobile_question_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12.33dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/interweight"
+                        android:text="Help &amp; Support"
+                        android:textColor="#FF282828"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="21.14dp"
+                        android:layout_height="21.14dp"
+                        android:layout_marginLeft="160.32dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/outline_arrow_forward_ios_24" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+
+</FrameLayout>

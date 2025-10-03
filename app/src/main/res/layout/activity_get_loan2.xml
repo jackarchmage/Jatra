@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityGetLoan2">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/btnBack"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/baseline_arrow_back_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="14dp"
+                        android:fontFamily="@font/interweight"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Upload Documents (2/2)"
+                        android:textColor="#FF282828"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/loanroundedbg"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="19dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="19dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/giftdeed" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="66.08dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="209dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-6dp"
+                        android:clipToPadding="false"
+                        android:gravity="left|top"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="-6dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/interweight"
+                            android:text="Gift Deed/Sale Deed"
+                            android:textColor="#FF282828"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="209dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4.5dp"
+                        android:layout_marginBottom="-3.5dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:lineHeight="16dp"
+                        android:maxLines="2"
+                        android:fontFamily="@font/interweight"
+                        android:text="A Legal document that records the sale and transfer of property ownership from seller"
+                        android:textColor="#FF5E5E5E"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/roundedbutton_white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="29dp"
+                        android:paddingRight="29dp"
+                        android:id="@+id/btn_giftdeed"
+                        android:paddingTop="15dp">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/outline_add_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:layout_marginLeft="13dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:fontFamily="@font/interweight"
+                                android:text="Upload File"
+                                android:textColor="#FF282828"
+                                android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loanroundedbg"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="19dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="19dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jamabandi" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="64.47dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="209dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-6dp"
+                        android:clipToPadding="false"
+                        android:gravity="left|top"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="-6dp"
+                            android:layout_marginBottom="-6dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:text="Jamabandi(Patti)"
+                            android:fontFamily="@font/interweight"
+                            android:textColor="#FF282828"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="209dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4.5dp"
+                        android:layout_marginBottom="-3.5dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:lineHeight="16dp"
+                        android:maxLines="2"
+                        android:text="A land ownership document issued by the Government to the Rightful owner of a property"
+                        android:textColor="#FF5E5E5E"
+                        android:fontFamily="@font/interweight"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/roundedbutton_white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="29dp"
+                        android:paddingRight="29dp"
+                        android:id="@+id/btn_jamabandi"
+                        android:paddingTop="15dp">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/outline_add_24" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:layout_marginLeft="13dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Upload File"
+                                android:textColor="#FF282828"
+                                android:fontFamily="@font/interweight"
+                                android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loanroundedbg"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="19dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="19dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tracemap" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="67.65dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="209dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-6dp"
+                        android:clipToPadding="false"
+                        android:gravity="left|top"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="-6dp"
+                            android:layout_marginBottom="-6dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:text="Trace Map"
+                            android:fontFamily="@font/interweight"
+                            android:textColor="#FF282828"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="209dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4.5dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:lineHeight="16dp"
+                        android:maxLines="2"
+                        android:text="The original land map prepared from official records"
+                        android:textColor="#FF5E5E5E"
+                        android:fontFamily="@font/interweight"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/roundedbutton_white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="29dp"
+                        android:paddingRight="29dp"
+                        android:id="@+id/btn_tracemap"
+                        android:paddingTop="15dp">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/outline_add_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:layout_marginLeft="13dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Upload File"
+                                android:fontFamily="@font/interweight"
+                                android:textColor="#FF282828"
+                                android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loanroundedbg"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="19dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="19dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/propertyphoto" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="209dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-6dp"
+                        android:clipToPadding="false"
+                        android:gravity="left|top"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="-6dp"
+                            android:layout_marginBottom="-6dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/interweight"
+                            android:text="Photos of Property"
+                            android:textColor="#FF282828"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="209dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4.5dp"
+                        android:layout_marginBottom="-3.5dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:lineHeight="16dp"
+                        android:maxLines="2"
+                        android:text="Please click clear photos of your property"
+                        android:textColor="#FF5E5E5E"
+                        android:fontFamily="@font/interweight"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/roundedbutton_white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="29dp"
+                        android:paddingRight="29dp"
+                        android:id="@+id/btn_propertyphoto"
+                        android:paddingTop="15dp">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/outline_add_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:layout_marginLeft="13dp"
+                                android:gravity="left|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Upload File"
+                                android:textColor="#FF282828"
+                                android:fontFamily="@font/interweight"
+                                android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/onboardingbtn"
+            android:text="SUBMIT"
+            android:id="@+id/btn_submit"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/interweight"
+            android:layout_gravity="center_horizontal"
+            />
+
+        </LinearLayout>
+
+</ScrollView>
