@@ -149,11 +149,13 @@ class ArListFragment : Fragment() {
 
     private fun openArFile(item: SuperArUser) {
         val link = item.file_link
+        val blueprint = item.blue_print
         if (!link.isNullOrBlank()) {
             try {
                 // Launch VRView and pass the model URL via intent extra
-                val intent = android.content.Intent(requireContext(), VRView::class.java)
+                val intent = android.content.Intent(requireContext(), AugmentHostActivity::class.java)
                 intent.putExtra("MODEL_URL", link)
+                intent.putExtra("BLUE_PRINT_URL",blueprint)
                 startActivity(intent)
             } catch (e: Exception) {
                 e.printStackTrace()

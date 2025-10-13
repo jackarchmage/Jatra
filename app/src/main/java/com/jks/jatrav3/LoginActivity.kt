@@ -28,7 +28,8 @@ class LoginActivity : AppCompatActivity() {
     private val session: SessionManager by lazy { SessionManager(this) }
 
     // Retrofit API
-    private val api: JatraApi by lazy { ApiClient.retrofit.create(JatraApi::class.java) }
+    private val api: JatraApi by lazy { ApiClient.jatraApi }
+
 
     // track server-returned OTP and returned customer id / object
     private var serverOtp: String? = null

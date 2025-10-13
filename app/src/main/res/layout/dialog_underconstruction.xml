@@ -28,7 +28,7 @@
         android:id="@+id/messageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This feature not available at the moment in your area"
+        android:text="This feature is not available at the moment in your area"
         android:gravity="center"
         android:layout_marginTop="8dp"
         android:textSize="16sp"

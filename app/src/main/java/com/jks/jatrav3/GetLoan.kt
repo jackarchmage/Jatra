@@ -35,7 +35,9 @@ import kotlin.getValue
 
 class GetLoan : AppCompatActivity() {
     private lateinit var session: SessionManager
-    private val api: JatraApi by lazy { ApiClient.retrofit.create(JatraApi::class.java) }
+    private val api: JatraApi by lazy { ApiClient.jatraApi }
+
+
 
     private val loginLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == RESULT_OK) {

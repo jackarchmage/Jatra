@@ -69,7 +69,9 @@ class ActivityGetLoan2 : AppCompatActivity(), PaymentResultListener {
     }
 
     // reuse your ApiClient retrofit instance
-    private val loanApi: JatraApi by lazy { ApiClient.retrofit.create(JatraApi::class.java) }
+
+    private val loanApi: JatraApi by lazy { ApiClient.jatraApi }
+
 
     // keep references during payment flow
     private var pendingLoanData: LoanTextData? = null

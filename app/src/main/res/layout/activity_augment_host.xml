@@ -29,6 +29,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Start AR" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlace"
+            />
 
         <Space
             android:layout_width="8dp"
@@ -39,6 +44,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Preload (download)" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/iv_image"
+            android:visibility="visible"
+            />
 
     </LinearLayout>
 

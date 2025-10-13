@@ -134,6 +134,7 @@ data class SuperAR(
     val payment_status: String?,
     val payment_id: String?,
     val file_link: String?,
+    val blue_print: String?,
     val _id: String?,
     val createdAt: String?,
     val updatedAt: String?,
@@ -165,6 +166,7 @@ data class SuperArUser(
     val payment_status: String?,
     val payment_id: String?,
     val file_link: String?,
+    val blue_print: String?,
     val createdAt: String?,
     val updatedAt: String?,
     val __v: Int?

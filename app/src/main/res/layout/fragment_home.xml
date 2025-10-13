@@ -50,7 +50,7 @@
             android:text="@string/design_source_hire_amp_get_loan_all_in_one_place"
             android:textColor="#FF263238"
             android:fontFamily="@font/interitalic"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <FrameLayout
             android:id="@+id/design_btn"
@@ -58,6 +58,7 @@
             android:layout_height="120dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="18dp"
+            android:layout_weight="1"
             android:background="@drawable/roundedframelayout">
             <ImageView
                 android:layout_width="150dp"
@@ -117,6 +118,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_height="120dp"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:background="@drawable/roundedframelayout">
             <ImageView
                 android:layout_width="150dp"
@@ -176,6 +178,7 @@
             android:layout_height="120dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:background="@drawable/roundedframelayout">
             <ImageView
                 android:layout_width="150dp"
@@ -234,7 +237,8 @@
             android:layout_height="120dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
             android:background="@drawable/roundedframelayout">
             <ImageView
                 android:layout_width="150dp"
@@ -283,13 +287,8 @@
                 android:layout_marginEnd="30dp"
                 android:layout_gravity="center_vertical|right"
                 android:scaleType="centerInside"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/getloan" />
+                android:background="@drawable/getloan"
+                android:backgroundTint="@color/white"/>
         </FrameLayout>
-
-
-
     </LinearLayout>
-
-
 </ScrollView>

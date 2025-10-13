@@ -58,6 +58,7 @@ interface JatraApi {
     suspend fun uploadArFile(
         @Part("c_id") cId: RequestBody,
         @Part arFile: MultipartBody.Part,
+        @Part bluePrintFile: MultipartBody.Part,
         @Part("p_status") pStatus: RequestBody,
         @Part("p_id") pId: RequestBody
     ): Response<UploadResponse>

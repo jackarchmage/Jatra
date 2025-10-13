@@ -27,6 +27,7 @@ import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import java.io.File
+import androidx.core.net.toUri
 
 class ProfileFragment : Fragment() {
 
@@ -171,8 +172,8 @@ class ProfileFragment : Fragment() {
         val thumb = session.getThumbnail() // implement this in SessionManager if not present
         if (!thumb.isNullOrEmpty()) {
             // best to use an image loader (Glide/Coil/Picasso). Quick fallback:
-//             btnProfileImage.setImageURI(Uri.parse(thumb))
-             Glide.with(this).load(thumb).into(btnProfileImage)
+             btnProfileImage.setImageURI(thumb.toUri())
+//             Glide.with(this).load(thumb).into(btnProfileImage)
         }
     }
 

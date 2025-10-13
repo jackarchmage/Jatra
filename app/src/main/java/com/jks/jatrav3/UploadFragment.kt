@@ -24,9 +24,11 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.asRequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.HttpException
 import java.io.File
@@ -35,6 +37,9 @@ class UploadFragment : Fragment() {
 
     private var pickedUri: Uri? = null
     private var uploadJob: Job? = null
+
+    private var pickedBlueprintUri: Uri? = null
+
 
     private val session: SessionManager by lazy { SessionManager(requireContext()) }
 
@@ -49,6 +54,10 @@ class UploadFragment : Fragment() {
     private lateinit var ctaText: TextView
     private lateinit var progressIndicator: LinearProgressIndicator
     private lateinit var cancelBtn: Button
+
+    private lateinit var selectBlueprintBtn: View
+    private lateinit var blueprintNameText: TextView
+
 
     // Replace with your Razorpay key id (test/live accordingly)
     private val RAZORPAY_KEY_ID = "rzp_live_Oq2TmGYemF7HYF"
@@ -67,6 +76,23 @@ class UploadFragment : Fragment() {
                 val name = getFileName(uri) ?: "file"
                 ctaText.text = "UPLOAD (Selected: $name)"
                 Toast.makeText(requireContext(), "Selected: $name", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+    // Blueprint image picker (images only)
+    private val pickBlueprintLauncher =
+        registerForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+            if (uri != null) {
+                try {
+                    requireContext().contentResolver.takePersistableUriPermission(
+                        uri,
+                        android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
+                    )
+                } catch (ignored: Exception) { /* provider may not allow persistable permission */ }
+
+                pickedBlueprintUri = uri
+                val name = getFileName(uri) ?: "blueprint"
+                Toast.makeText(requireContext(), "Selected blueprint: $name", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -90,10 +116,17 @@ class UploadFragment : Fragment() {
         cancelBtn = view.findViewById(R.id.upload_cancel_btn)
         customerId = session.getCustomerId().toString()
 
+        selectBlueprintBtn = view.findViewById(R.id.btn_image_upload)
+
+
         backBtn.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.frame1, Ar1())
                 .commit()
+        }
+        selectBlueprintBtn.setOnClickListener {
+            // images only
+            pickBlueprintLauncher.launch(arrayOf("image/*"))
         }
 
         centerColumn.setOnClickListener {
@@ -242,6 +275,11 @@ class UploadFragment : Fragment() {
             return
         }
 
+        val blueprintUri = pickedBlueprintUri ?: run {
+            Toast.makeText(requireContext(), "No blueprint selected", Toast.LENGTH_SHORT).show()
+            return
+        }
+
         progressIndicator.progress = 0
         progressIndicator.visibility = View.VISIBLE
         cancelBtn.visibility = View.VISIBLE
@@ -256,6 +294,8 @@ class UploadFragment : Fragment() {
         uploadJob = lifecycleScope.launch {
             try {
                 val file = withContext(Dispatchers.IO) { uriToFile(requireContext().contentResolver, uri) }
+                val blueprintFile = withContext(Dispatchers.IO) { uriToFile(requireContext().contentResolver, blueprintUri) }
+
                 if (file == null) {
                     progressDialog.dismiss()
                     progressIndicator.visibility = View.GONE
@@ -264,7 +304,15 @@ class UploadFragment : Fragment() {
                     return@launch
                 }
 
+                if (file == null || blueprintFile == null) {
+                    progressDialog.dismiss()
+                    progressIndicator.visibility = View.GONE
+                    cancelBtn.visibility = View.GONE
+                    Toast.makeText(requireContext(), "Failed to read files", Toast.LENGTH_SHORT).show()
+                    return@launch
+                }
                 val mime = requireContext().contentResolver.getType(uri) ?: "application/octet-stream"
+                val blueprintMime = requireContext().contentResolver.getType(blueprintUri) ?: "image/*"
 
                 val countingBody = CountingRequestBody(
                     file = file,
@@ -280,13 +328,17 @@ class UploadFragment : Fragment() {
                 )
 
                 val multipart = MultipartBody.Part.createFormData("ar_file", file.name, countingBody)
+                // Blueprint as normal RequestBody
+                val blueprintRequestBody: RequestBody = blueprintFile.asRequestBody(blueprintMime.toMediaType())
+                val blueprintPart = MultipartBody.Part.createFormData("blue_print", blueprintFile.name, blueprintRequestBody)
 
-                val cIdBody = customerId.toRequestBody("text/plain".toMediaTypeOrNull())
-                val pStatusBody = "success".toRequestBody("text/plain".toMediaTypeOrNull())
-                val pIdBody = paymentId.toRequestBody("text/plain".toMediaTypeOrNull())
+                val textMediaType = "text/plain".toMediaType()
+                val cIdBody = customerId.toRequestBody(textMediaType)
+                val pStatusBody = "success".toRequestBody(textMediaType)
+                val pIdBody = paymentId.toRequestBody(textMediaType)
 
                 // call your jatra upload api (ApiClient.jatraApi should have uploadArFile defined)
-                val response = ApiClient.jatraApi.uploadArFile(cIdBody, multipart, pStatusBody, pIdBody)
+                val response = ApiClient.jatraUploadApi.uploadArFile(cIdBody, multipart, blueprintPart,pStatusBody, pIdBody)
 
                 progressDialog.dismiss()
                 progressIndicator.visibility = View.GONE
@@ -331,22 +383,26 @@ class UploadFragment : Fragment() {
 
     private fun uriToFile(contentResolver: ContentResolver, uri: Uri): File? {
         return try {
-            val fileName = getFileName(uri) ?: "upload_file"
-            val suffix = fileName.substringAfterLast('.', "")
-            val tempFile = if (suffix.isNotEmpty()) {
-                File.createTempFile("upload_", ".$suffix", requireContext().cacheDir)
-            } else {
-                File.createTempFile("upload_", null, requireContext().cacheDir)
-            }
+            val fileNameRaw = getFileName(uri) ?: "upload_file"
+            // sanitize filename to avoid path components
+            val fileName = fileNameRaw.replace(Regex("[:\\\\/\\s]+"), "_")
+            val outFile = File(requireContext().cacheDir, fileName)
+
+            // overwrite if exists
+            if (outFile.exists()) outFile.delete()
+
             contentResolver.openInputStream(uri)?.use { input ->
-                tempFile.outputStream().use { output -> input.copyTo(output) }
+                outFile.outputStream().use { output ->
+                    input.copyTo(output)
+                }
             }
-            tempFile
+            outFile
         } catch (e: Exception) {
             e.printStackTrace()
             null
         }
     }
+
 
     private fun getFileName(uri: Uri): String? {
         val doc = DocumentFile.fromSingleUri(requireContext(), uri)

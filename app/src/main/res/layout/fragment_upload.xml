@@ -50,7 +50,7 @@
     <FrameLayout
         android:id="@+id/dashed_container"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="250dp"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="28dp"
         android:clipToPadding="false"
@@ -96,6 +96,48 @@
         </LinearLayout>
 
     </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@drawable/dashed_rounded"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/uploadicon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_image_upload"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload your Blueprint"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/interweight"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supported Formats: Image only: JPG, PNG"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/interweight"
+            android:alpha="0.7"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/upload_progress_indicator"
         android:layout_width="match_parent"
