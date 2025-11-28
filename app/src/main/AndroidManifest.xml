@@ -22,6 +22,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".WebviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocalAR"
+            android:exported="false" />
+        <activity
             android:name=".AugmentHostActivity"
             android:exported="false" />
         <activity

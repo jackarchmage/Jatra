@@ -1,15 +1,12 @@
 package com.jks.jatrav3
 
-import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
 import android.widget.LinearLayout
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
 class DesignFragment : Fragment() {
@@ -39,17 +36,16 @@ class DesignFragment : Fragment() {
             //            SessionManager(this).isFirstLaunch = false
 
             // Go to SplashActivity again (or directly MainActivity)
-//            val intent = Intent(requireContext(), GetLoan::class.java)
-//            startActivity(intent)
-//            MyBottomSheet().show(supportFragmentManager, "MyBottomSheet")
+            val intent = Intent(requireContext(), LocalAR::class.java)
+            startActivity(intent)
 
-            val dialogView = layoutInflater.inflate(R.layout.dialog_underconstruction, null)
-
-            AlertDialog.Builder(requireContext())
-                .setView(dialogView)
-                .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
-                .create()
-                .show()
+//            val dialogView = layoutInflater.inflate(R.layout.dialog_underconstruction, null)
+//
+//            AlertDialog.Builder(requireContext())
+//                .setView(dialogView)
+//                .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
+//                .create()
+//                .show()
 //            ProjectBottomSheet().show(parentFragmentManager, "ProjectBottomSheet")
         }
         btnVisualization?.setOnClickListener {
