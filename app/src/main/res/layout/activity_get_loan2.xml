@@ -43,6 +43,7 @@
                         android:singleLine="true"
                         android:text="Upload Documents (2/2)"
                         android:textColor="#FF282828"
+                        android:textStyle="bold"
                         android:textSize="24sp" />
                 </LinearLayout>
 
@@ -78,18 +79,14 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="-6dp"
                         android:clipToPadding="false"
                         android:gravity="left|top"
                         android:orientation="horizontal"
-                        android:paddingBottom="6dp"
-                        android:paddingTop="7dp">
+                        >
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="23dp"
-                            android:layout_marginTop="-12dp"
-                            android:layout_marginBottom="-6dp"
                             android:gravity="left|center_vertical"
                             android:includeFontPadding="false"
                             android:maxLines="1"
@@ -104,28 +101,23 @@
                     <TextView
                         android:layout_width="209dp"
                         android:layout_height="32dp"
-                        android:layout_marginTop="4.5dp"
-                        android:layout_marginBottom="-3.5dp"
-                        android:gravity="left|center_vertical"
+                        android:gravity="left|top"
                         android:includeFontPadding="false"
-                        android:lineHeight="16dp"
                         android:maxLines="2"
                         android:fontFamily="@font/interweight"
                         android:text="A Legal document that records the sale and transfer of property ownership from seller"
                         android:textColor="#FF5E5E5E"
-                        android:textSize="12sp" />
+                        android:textSize="9sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:background="@drawable/roundedbutton_white"
+                        android:background="@drawable/dashedgreyloanbtn"
                         android:gravity="center"
+                        android:layout_gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingBottom="15dp"
-                        android:paddingLeft="29dp"
-                        android:paddingRight="29dp"
                         android:id="@+id/btn_giftdeed"
+                        android:paddingBottom="15dp"
                         android:paddingTop="15dp">
                             <ImageView
                                 android:layout_width="18dp"
@@ -199,7 +191,7 @@
                             android:maxLines="1"
                             android:singleLine="true"
                             android:textStyle="bold"
-                            android:text="Jamabandi(Patti)"
+                            android:text="Jamabandi(Patta)"
                             android:fontFamily="@font/interweight"
                             android:textColor="#FF282828"
                             android:textSize="18sp" />
@@ -208,27 +200,22 @@
                     <TextView
                         android:layout_width="209dp"
                         android:layout_height="32dp"
-                        android:layout_marginTop="4.5dp"
-                        android:layout_marginBottom="-3.5dp"
-                        android:gravity="left|center_vertical"
+                        android:gravity="left|top"
                         android:includeFontPadding="false"
-                        android:lineHeight="16dp"
+                        android:layout_marginTop="5dp"
                         android:maxLines="2"
                         android:text="A land ownership document issued by the Government to the Rightful owner of a property"
                         android:textColor="#FF5E5E5E"
                         android:fontFamily="@font/interweight"
-                        android:textSize="12sp" />
+                        android:textSize="9sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:background="@drawable/roundedbutton_white"
+                        android:background="@drawable/dashedgreyloanbtn"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingBottom="15dp"
-                        android:paddingLeft="29dp"
-                        android:paddingRight="29dp"
                         android:id="@+id/btn_jamabandi"
                         android:paddingTop="15dp">
                             <ImageView
@@ -313,23 +300,20 @@
                         android:layout_marginTop="4.5dp"
                         android:gravity="left|center_vertical"
                         android:includeFontPadding="false"
-                        android:lineHeight="16dp"
                         android:maxLines="2"
                         android:text="The original land map prepared from official records"
                         android:textColor="#FF5E5E5E"
                         android:fontFamily="@font/interweight"
-                        android:textSize="12sp" />
+                        android:textSize="9sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/roundedbutton_white"
+                        android:background="@drawable/dashedgreyloanbtn"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingBottom="15dp"
-                        android:paddingLeft="29dp"
-                        android:paddingRight="29dp"
                         android:id="@+id/btn_tracemap"
                         android:paddingTop="15dp">
 
@@ -414,27 +398,22 @@
                     <TextView
                         android:layout_width="209dp"
                         android:layout_height="32dp"
-                        android:layout_marginTop="4.5dp"
-                        android:layout_marginBottom="-3.5dp"
-                        android:gravity="left|center_vertical"
+                        android:gravity="left|top"
+                        android:layout_marginTop="5dp"
                         android:includeFontPadding="false"
-                        android:lineHeight="16dp"
                         android:maxLines="2"
                         android:text="Please click clear photos of your property"
                         android:textColor="#FF5E5E5E"
                         android:fontFamily="@font/interweight"
-                        android:textSize="12sp" />
+                        android:textSize="9sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:background="@drawable/roundedbutton_white"
+                        android:background="@drawable/dashedgreyloanbtn"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingBottom="15dp"
-                        android:paddingLeft="29dp"
-                        android:paddingRight="29dp"
                         android:id="@+id/btn_propertyphoto"
                         android:paddingTop="15dp">
 

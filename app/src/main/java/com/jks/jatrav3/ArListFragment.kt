@@ -36,9 +36,12 @@ class ArListFragment : Fragment() {
     // lazy { SessionManager(requireContext()) } is OK as long as we don't call it before onViewCreated.
     private val session: SessionManager by lazy { SessionManager(requireContext()) }
 
+
     private val adapter by lazy {
         ARAdapter { item -> openArFile(item) }
     }
+
+
 
     // will be initialized in onViewCreated from SessionManager
     private lateinit var customerIdArg: String

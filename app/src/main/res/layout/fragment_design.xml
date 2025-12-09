@@ -13,7 +13,7 @@
         android:background="@color/white">
 
         <LinearLayout
-                android:layout_width="360dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:layout_gravity="top|center_horizontal"
@@ -26,16 +26,16 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:visibility="invisible"
+                    android:visibility="gone"
                     android:scaleType="centerInside"
                     android:src="@drawable/baseline_arrow_back_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_marginLeft="14dp"
                     android:layout_marginTop="-3dp"
                     android:layout_marginBottom="-3dp"
+                    android:layout_marginStart="15dp"
                     android:gravity="left|center_vertical"
                     android:includeFontPadding="false"
                     android:maxLines="1"
@@ -43,12 +43,13 @@
                     android:fontFamily="@font/interweight"
                     android:text=" Design Workspace"
                     android:textColor="#FF000000"
+                    android:textStyle="bold"
                     android:textSize="24dp" />
             </LinearLayout>
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="184dp"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="15dp"
             android:layout_marginTop="15dp"
             android:layout_gravity="top|center_horizontal"
             android:background="@drawable/roundedframelayout">
@@ -63,8 +64,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="top|center_horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="left|bottom"
                 android:orientation="horizontal">
 
@@ -88,20 +88,18 @@
                         android:fontFamily="@font/interweight"
                         android:text="View your design in AR"
                         android:textColor="#FFF8F8F8"
-                        android:textSize="19sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
                         android:layout_marginStart="20dp"
                         android:gravity="left|top"
                         android:includeFontPadding="false"
-                        android:lineHeight="16dp"
                         android:fontFamily="@font/interweight"
                         android:text="See it before you build it"
                         android:textColor="#FFF8F8F8"
-                        android:textSize="12sp" />
+                        android:textSize="8sp" />
 
                     <LinearLayout
                         android:layout_width="100dp"
@@ -139,14 +137,14 @@
                     android:layout_gravity="bottom|end"
                     android:layout_marginEnd="20dp"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/design_icon"
+                    android:src="@drawable/as222"
                     app:tint="@color/white" />
             </LinearLayout>
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="184dp"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="15dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="top|center_horizontal"
             android:background="@drawable/roundedframelayout">
@@ -162,8 +160,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="top|center_horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="left|bottom"
                 android:orientation="horizontal">
 
@@ -177,7 +174,7 @@
                     android:paddingTop="1dp">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="22dp"
                         android:gravity="left|center_vertical"
                         android:includeFontPadding="false"
@@ -185,21 +182,19 @@
                         android:fontFamily="@font/interweight"
                         android:singleLine="true"
                         android:textStyle="bold"
-                        android:text="Design Visualization"
+                        android:text="Design Rendering"
                         android:textColor="#FFFFFFFF"
-                        android:textSize="19sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
                         android:gravity="left|top"
                         android:includeFontPadding="false"
-                        android:lineHeight="16dp"
                         android:fontFamily="@font/interweight"
                         android:text="Visualize your design\nGet 3D views or walkthrough\n videosat the best price"
                         android:textColor="#FFF8F8F8"
-                        android:textSize="12sp" />
+                        android:textSize="8sp" />
 
                     <LinearLayout
                         android:layout_width="100dp"
@@ -235,14 +230,14 @@
                     android:layout_marginEnd="20dp"
                     android:layout_gravity="center|end"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/design_icon"
+                    android:src="@drawable/as122png"
                     app:tint="@color/white" />
             </LinearLayout>
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="184dp"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="15dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="top|center_horizontal"
             android:background="@drawable/roundedframelayout">
@@ -258,9 +253,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginStart="10dp"
-                android:layout_gravity="top|center_horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="left|bottom"
                 android:orientation="horizontal">
 
@@ -269,6 +262,7 @@
                     android:layout_height="wrap_content"
                     android:clipToPadding="false"
                     android:gravity="left|top"
+                    android:layout_marginStart="20dp"
                     android:orientation="vertical"
                     android:paddingTop="1dp">
 
@@ -283,19 +277,17 @@
                         android:fontFamily="@font/interweight"
                         android:text="Build a new design"
                         android:textColor="#FFFFFFFF"
-                        android:textSize="19sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
                         android:gravity="left|top"
                         android:includeFontPadding="false"
-                        android:lineHeight="16dp"
                         android:fontFamily="@font/interweight"
                         android:text="Design more, spend less"
                         android:textColor="#FFF8F8F8"
-                        android:textSize="12sp" />
+                        android:textSize="8sp" />
 
                     <LinearLayout
                         android:layout_width="100dp"
@@ -331,7 +323,7 @@
                     android:layout_weight="1"
                     android:scaleType="fitEnd"
                     android:layout_marginEnd="20dp"
-                    android:src="@drawable/design_icon"
+                    android:src="@drawable/as111"
                     app:tint="@color/white" />
             </LinearLayout>
         </FrameLayout>

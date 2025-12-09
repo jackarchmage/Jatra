@@ -3,7 +3,7 @@
     <!-- existing theme styles... -->
 
     <style name="BottomNavActiveText" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">10sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 </resources>

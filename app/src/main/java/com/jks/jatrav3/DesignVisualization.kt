@@ -289,6 +289,7 @@ class DesignVisualization : Fragment() {
     private fun hideLoader() {
         try {
             binding.loaderOverlay.visibility = View.GONE
+            binding.contentLayout.visibility = View.VISIBLE
         } catch (e: Exception) {
         }
     }

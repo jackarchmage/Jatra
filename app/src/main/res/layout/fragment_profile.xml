@@ -31,9 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
-                android:layout_marginLeft="3.33dp"
                 android:layout_gravity="center_horizontal"
-                android:gravity="left|center_vertical"
                 android:includeFontPadding="false"
                 android:maxLines="1"
                 android:id="@+id/tt_name"

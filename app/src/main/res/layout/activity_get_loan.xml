@@ -44,6 +44,7 @@
                         android:maxLines="1"
                         android:singleLine="true"
                         android:text="Get Loan (1/2)"
+                        android:textStyle="bold"
                         android:fontFamily="@font/interweight"
                         android:textColor="#FF282828"
                         android:textSize="24sp" />

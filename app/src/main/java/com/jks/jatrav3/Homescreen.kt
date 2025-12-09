@@ -83,8 +83,8 @@ class Homescreen : AppCompatActivity(), PaymentResultListener {
                 R.id.nav_account-> loadFragment(ProfileFragment())
             }
             updateLabelVisibilityWithAnimation(bottomNav,item.itemId,animate = true)
-            updateMenuTitlesForSelected(bottomNav, item.itemId)
-            scaleSelectedIcon(bottomNav, item.itemId)
+//            updateMenuTitlesForSelected(bottomNav, item.itemId)
+//            scaleSelectedIcon(bottomNav, item.itemId)
             true
         }
         setupBottomNav(bottomNav)
@@ -243,6 +243,12 @@ class Homescreen : AppCompatActivity(), PaymentResultListener {
 
             val isSelected = bottomNav.menu[i].itemId == selectedId
 
+            val isHome = bottomNav.menu[0].itemId == R.id.nav_home
+
+            // Home should always show its labels; others hide when selected
+            val showLabels = isHome || !isSelected
+
+
 //            if (animate) {
 //                animateLabelVisibility(smallLabel, !isSelected)
 //                animateLabelVisibility(largeLabel, !isSelected)
@@ -252,21 +258,25 @@ class Homescreen : AppCompatActivity(), PaymentResultListener {
 //            }
             if (animate) {
                 // for selected -> HIDE labels; for unselected -> SHOW labels
-                if (isSelected) {
-                    animateLabelVisibility(smallLabel, show = false)
-                    animateLabelVisibility(largeLabel, show = false)
-                } else {
-                    animateLabelVisibility(smallLabel, show = true)
-                    animateLabelVisibility(largeLabel, show = true)
-                }
+//                if (isSelected) {
+//                    animateLabelVisibility(smallLabel, show = false)
+//                    animateLabelVisibility(largeLabel, show = false)
+//                } else {
+//                    animateLabelVisibility(smallLabel, show = true)
+//                    animateLabelVisibility(largeLabel, show = true)
+//                }
+                animateLabelVisibility(smallLabel, show = showLabels)
+                animateLabelVisibility(largeLabel, show = showLabels)
             } else {
-                if (isSelected) {
-                    applyLabelVisibilityInstant(smallLabel, show = false)
-                    applyLabelVisibilityInstant(largeLabel, show = false)
-                } else {
-                    applyLabelVisibilityInstant(smallLabel, show = true)
-                    applyLabelVisibilityInstant(largeLabel, show = true)
-                }
+//                if (isSelected) {
+//                    applyLabelVisibilityInstant(smallLabel, show = false)
+//                    applyLabelVisibilityInstant(largeLabel, show = false)
+//                } else {
+//                    applyLabelVisibilityInstant(smallLabel, show = true)
+//                    applyLabelVisibilityInstant(largeLabel, show = true)
+//                }
+                applyLabelVisibilityInstant(smallLabel, show = showLabels)
+                applyLabelVisibilityInstant(largeLabel, show = showLabels)
             }
 
         }
@@ -284,8 +294,18 @@ class Homescreen : AppCompatActivity(), PaymentResultListener {
         for (i in 0 until bottomNav.menu.size) {
             val menuItem = bottomNav.menu[i]
             val orig = defaultTitles[menuItem.itemId] ?: ""
-            // selected -> hide title, unselected -> restore default
-            menuItem.title = if (menuItem.itemId == selectedId) "" else orig
+
+            val isSelected = menuItem.itemId == selectedId
+            val isHome = menuItem.itemId == R.id.nav_home
+
+            // Home -> always show title. Others -> hide title when selected.
+            menuItem.title = when {
+                isHome -> orig
+                isSelected -> ""
+                else -> orig
+            }
+//            // selected -> hide title, unselected -> restore default
+//            menuItem.title = if (menuItem.itemId == selectedId) "" else orig
 
             // accessibility: set original text on the item view's contentDescription
             val itemView = menuView.getChildAt(i) as? BottomNavigationItemView

@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/nav_source"
-        android:icon="@drawable/material"
+        android:icon="@drawable/iconsss"
         android:title="Source" />
     <item
         android:id="@+id/nav_hire"
@@ -21,6 +21,6 @@
 
     <item
         android:id="@+id/nav_account"
-        android:icon="@drawable/profile_icon2"
+        android:icon="@drawable/iconacc"
         android:title="Account" />
 </menu>
