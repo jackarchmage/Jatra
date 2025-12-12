@@ -87,7 +87,7 @@ dependencies {
 
     // keep lifecycle viewmodel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
-    
+    implementation("androidx.browser:browser:1.8.0")
     implementation("io.github.sceneview:sceneview:2.3.0")
     implementation("io.github.sceneview:arsceneview:2.3.0")
     implementation("com.google.ar:core:1.50.0")

@@ -24,6 +24,12 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.doOnLayout
 import androidx.core.view.updatePadding
+import android.content.Context
+import android.os.Build
+import android.os.VibrationEffect
+import android.os.Vibrator
+import android.os.VibratorManager
+
 
 // ADD THIS IMPORT
 import com.razorpay.PaymentResultListener
@@ -75,6 +81,7 @@ class Homescreen : AppCompatActivity(), PaymentResultListener {
         bottomNav.selectedItemId = bottomNav.selectedItemId.takeIf { it != 0 } ?: R.id.nav_home
 
         bottomNav.setOnItemSelectedListener { item ->
+            performHapticFeedback(bottomNav)
             when (item.itemId) {
                 R.id.nav_home -> loadFragment(HomeFragment())
                 R.id.nav_design -> loadFragment(DesignFragment())
@@ -162,6 +169,43 @@ class Homescreen : AppCompatActivity(), PaymentResultListener {
         setIntent(intent) // update stored intent
         openFragmentFromIntent(intent)
     }
+
+    fun performHapticFeedback(view: View) {
+
+        val context = view.context
+
+        val vibrator = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+
+            val vibratorManager = context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
+            vibratorManager.defaultVibrator
+        } else {
+
+            @Suppress("DEPRECATION")
+            context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        }
+
+        // Check if the device has a vibrator
+        if (!vibrator.hasVibrator()) {
+            return
+        }
+
+        // Create the vibration effect.
+        // This is the modern way to do it.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+
+            val duration = 100L
+
+            val amplitude = VibrationEffect.DEFAULT_AMPLITUDE
+            val effect = VibrationEffect.createOneShot(100L, VibrationEffect.DEFAULT_AMPLITUDE)
+            vibrator.vibrate(effect)
+        } else {
+
+            @Suppress("DEPRECATION")
+            vibrator.vibrate(100)
+        }
+    }
+
 
     private fun openFragmentFromIntent(intent: Intent?) {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
